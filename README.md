@@ -35,20 +35,6 @@ Laravelのセットアップ
     -Laravel 8.75
     -MySQL 8.0
 
-## ユーザー認証
-    Fortifyを利用してユーザー認証機能を構築しています。
-
-## Fortify導入手順
-    docker-compose exec php bash
-    composer require laravel/fortify
-    php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
-    php artisan migrate
-
-## 日本語化
-    docker-compose exec php bash
-    composer require laravel-lang/lang:~7.0 --dev
-    cp -r ./vendor/laravel-lang/lang/src/ja ./resources/lang/
-
 ## ER図
     ![alt](src/erd.png)
 
